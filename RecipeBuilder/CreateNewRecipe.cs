@@ -17,6 +17,7 @@ namespace RecipeBuilder
             InitializeComponent();
         }
 
+       //Test comment for commit
         private void EntryRecipeName_TextChanged(object sender, EventArgs e)
         {
 
