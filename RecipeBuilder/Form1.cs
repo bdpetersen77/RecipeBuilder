@@ -24,7 +24,7 @@ namespace RecipeBuilder
 
         private void BtnCreateRecipe_Click(object sender, EventArgs e)
         {
-            CreateNewRecipe page = new CreateNewRecipe();
+            NewRecipeName page = new NewRecipeName();
             page.Show();
         }
 

@@ -16,5 +16,10 @@ namespace RecipeBuilder
         {
             InitializeComponent();
         }
+
+        private void EntryRecipeName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -54,10 +54,15 @@
             this.BtnRemoveMiscellaneous = new System.Windows.Forms.Button();
             this.BtnAddMiscellaneous = new System.Windows.Forms.Button();
             this.LstMasterMiscellaneous = new System.Windows.Forms.ListBox();
+            this.settingsIngredientsTab = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.GbMasterMeatIngredients.SuspendLayout();
             this.GbMasterVeggieIngredients.SuspendLayout();
             this.GbFruit.SuspendLayout();
             this.GbMiscellaneous.SuspendLayout();
+            this.settingsIngredientsTab.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // GbMasterMeatIngredients
@@ -67,7 +72,7 @@
             this.GbMasterMeatIngredients.Controls.Add(this.BtnRemoveMeatMasterIngredient);
             this.GbMasterMeatIngredients.Controls.Add(this.BtnAddMeatMasterIngredient);
             this.GbMasterMeatIngredients.Controls.Add(this.LstMasterMeatIngredients);
-            this.GbMasterMeatIngredients.Location = new System.Drawing.Point(67, 72);
+            this.GbMasterMeatIngredients.Location = new System.Drawing.Point(20, 30);
             this.GbMasterMeatIngredients.Name = "GbMasterMeatIngredients";
             this.GbMasterMeatIngredients.Size = new System.Drawing.Size(353, 238);
             this.GbMasterMeatIngredients.TabIndex = 4;
@@ -137,7 +142,7 @@
             this.GbMasterVeggieIngredients.Controls.Add(this.BtnRemoveVeggie);
             this.GbMasterVeggieIngredients.Controls.Add(this.BtnAddVeggie);
             this.GbMasterVeggieIngredients.Controls.Add(this.LstMasterVeggieIngredients);
-            this.GbMasterVeggieIngredients.Location = new System.Drawing.Point(448, 72);
+            this.GbMasterVeggieIngredients.Location = new System.Drawing.Point(409, 31);
             this.GbMasterVeggieIngredients.Name = "GbMasterVeggieIngredients";
             this.GbMasterVeggieIngredients.Size = new System.Drawing.Size(353, 238);
             this.GbMasterVeggieIngredients.TabIndex = 6;
@@ -195,9 +200,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(63, 24);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(177, 20);
+            this.label3.Size = new System.Drawing.Size(192, 20);
             this.label3.TabIndex = 7;
-            this.label3.Text = "EDIT INGREDIENTS";
+            this.label3.Text = "PROGRAM SETTINGS";
             // 
             // GbFruit
             // 
@@ -206,7 +211,7 @@
             this.GbFruit.Controls.Add(this.BtnRemoveFruit);
             this.GbFruit.Controls.Add(this.BtnAddFruit);
             this.GbFruit.Controls.Add(this.LstMasterFruit);
-            this.GbFruit.Location = new System.Drawing.Point(67, 356);
+            this.GbFruit.Location = new System.Drawing.Point(20, 298);
             this.GbFruit.Name = "GbFruit";
             this.GbFruit.Size = new System.Drawing.Size(353, 238);
             this.GbFruit.TabIndex = 6;
@@ -264,7 +269,7 @@
             this.GbMiscellaneous.Controls.Add(this.BtnRemoveMiscellaneous);
             this.GbMiscellaneous.Controls.Add(this.BtnAddMiscellaneous);
             this.GbMiscellaneous.Controls.Add(this.LstMasterMiscellaneous);
-            this.GbMiscellaneous.Location = new System.Drawing.Point(448, 356);
+            this.GbMiscellaneous.Location = new System.Drawing.Point(409, 298);
             this.GbMiscellaneous.Name = "GbMiscellaneous";
             this.GbMiscellaneous.Size = new System.Drawing.Size(353, 238);
             this.GbMiscellaneous.TabIndex = 7;
@@ -315,17 +320,50 @@
             this.LstMasterMiscellaneous.Size = new System.Drawing.Size(181, 147);
             this.LstMasterMiscellaneous.TabIndex = 0;
             // 
+            // settingsIngredientsTab
+            // 
+            this.settingsIngredientsTab.Controls.Add(this.tabPage1);
+            this.settingsIngredientsTab.Controls.Add(this.tabPage2);
+            this.settingsIngredientsTab.Location = new System.Drawing.Point(67, 55);
+            this.settingsIngredientsTab.Name = "settingsIngredientsTab";
+            this.settingsIngredientsTab.Padding = new System.Drawing.Point(10, 5);
+            this.settingsIngredientsTab.SelectedIndex = 0;
+            this.settingsIngredientsTab.Size = new System.Drawing.Size(799, 583);
+            this.settingsIngredientsTab.TabIndex = 8;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.GbMasterMeatIngredients);
+            this.tabPage1.Controls.Add(this.GbMiscellaneous);
+            this.tabPage1.Controls.Add(this.GbFruit);
+            this.tabPage1.Controls.Add(this.GbMasterVeggieIngredients);
+            this.tabPage1.Location = new System.Drawing.Point(4, 26);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(8);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(8);
+            this.tabPage1.Size = new System.Drawing.Size(791, 553);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Ingredients";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 26);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(791, 553);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(876, 690);
-            this.Controls.Add(this.GbMiscellaneous);
-            this.Controls.Add(this.GbFruit);
+            this.ClientSize = new System.Drawing.Size(1028, 690);
+            this.Controls.Add(this.settingsIngredientsTab);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.GbMasterVeggieIngredients);
             this.Controls.Add(this.BtnReturnFromSettings);
-            this.Controls.Add(this.GbMasterMeatIngredients);
             this.Name = "Settings";
             this.Text = "Settings";
             this.Load += new System.EventHandler(this.Settings_Load);
@@ -337,6 +375,8 @@
             this.GbFruit.PerformLayout();
             this.GbMiscellaneous.ResumeLayout(false);
             this.GbMiscellaneous.PerformLayout();
+            this.settingsIngredientsTab.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -370,5 +410,8 @@
         private System.Windows.Forms.Button BtnRemoveMiscellaneous;
         private System.Windows.Forms.Button BtnAddMiscellaneous;
         private System.Windows.Forms.ListBox LstMasterMiscellaneous;
+        private System.Windows.Forms.TabControl settingsIngredientsTab;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
     }
 }
