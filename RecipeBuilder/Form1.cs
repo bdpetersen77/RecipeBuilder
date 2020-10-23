@@ -12,6 +12,7 @@ namespace RecipeBuilder
 {
     public partial class MainPageForm : Form
     {
+        //this is a test comment to test a Pull request
         public MainPageForm()
         {
             InitializeComponent();
